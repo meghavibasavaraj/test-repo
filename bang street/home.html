@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bangalore street food</title>
+<link rel="stylesheet" type="css/text" href="style.css">
+<style>
+.myslides {
+	display:none;}
+</style>
+
+</head>
+<body>
+<div class="row">
+<div class="col">
+<img src="/home/qwinix/Desktop/bang street/logo-and-icons/blr-street-food-logo.png">
+</div><!--col-->
+
+<nav>
+<a href="about.html">About
+<img src="/home/qwinix/Desktop/bang street/logo-and-icons/icon-down-arrow-white.png">
+</a>
+<a href="register.html">Register
+<img src="/home/qwinix/Desktop/bang street/logo-and-icons/icon-down-arrow-white.png">
+</a>
+</nav>
+
+</div><!--row-->
+<div class="clear"></div>
+
+
+
+<div class="container">
+
+<section class="section">
+
+<img class="myslides" src="/home/qwinix/Desktop/bang street/slider-images/slider-sample-with-text.png">
+<img class="myslides" src="/home/qwinix/Desktop/bang street/slider-images/slider1.jpg">
+<img class="myslides" src="/home/qwinix/Desktop/bang street/slider-images/slider4.jpg">
+<img class="myslides" src="/home/qwinix/Desktop/bang street/slider-images/slider5.jpg">
+<img class="myslides" src="/home/qwinix/Desktop/bang street/slider-images/slider6.jpg">
+
+<ul class="tab">
+<li id="indira">Idiranagar</li>
+<li id="vv">VV Puram</li>
+<li id="kor">Kormangala</li>
+</ul>
+
+<!--indiranagar-->
+<div class="row">
+<div class="col2">
+<p>Like the area surrounding any college, the streets around Indiranagar are dotted with a variety of
+eateries and street food stalls patronised for good reason by the students whom they serve.
+Here are a few that you could check out.</p>
+<p>Hatti Kaapi – Superlative filter coffee. Best of South-Indian tiffin snacks – Maddur Vada, Masala
+Bun, Vada Pao, Idly, Vada. Hazelnut Cold Coffee.</p>
+<p>Khawa Karpo – Hole-in-the-wall Tibetan joint frequented by students. Thukpa, Honey Potato
+Wedges, Ting-Mo and Chicken Shap-tak.</p>
+<p>Juice Junction – Freshly prepared fruit juices, fruit salad.</p>
+<p>Soori Chats – South-Indian Bhel Puri.</p>
+<p>String them together to form the Indiranagar. This area is full of eateries of varying budgets. Among
+the mid-range restaurants you could also try Meghana Biryani for Andhra style biryani, Empire Restaurant for Dosa Chicken and Truffles Ice and Spice for continental cuisine.</p>
+</div><!--col2-->
+<div class="col3">
+<h3>Must have:</h3>
+<pre>Special South-Indian fare – Akki Roti / Ragi Roti / Paniyaram or paddus / Kodu Bele
+Special South-Indian sweet paranthas – Dal / Hollige
+Hot Jalebis / Gulab Jamun
+Bhajjis & Bondas
+Gulkun Ice-cream
+</pre>
+<h3>Do try:</h3>
+<pre>
+Regular South-Indian Tiffin – Dosas & Uttapams (made with generous amounts of pure ghee),
+Idli, Vadas, Lemon Rice, Curd Rice, Vermicelli Upma
+For an outlet by outlet guide on what to eat where, head here – The Ultimate VV Puram Street
+Food Experience Guide by BLR Street Food.
+</pre>
+</div><!--col3-->
+</div><!--row-->
+
+</div><!--container-->
+</section>
+
+
+
+
+<script>
+var myIndex = 0;
+myfunction();
+
+function myfunction() {
+    var i;
+    var x = document.getElementsByClassName("myslides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(myfunction, 5000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
